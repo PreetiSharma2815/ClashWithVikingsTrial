@@ -280,6 +280,7 @@ var GameLayer = cc.Layer.extend({
         // --------- My Score ! ---------
 
         var scoreLabel = cc.LabelTTF.create("0", "fantasy", 20, cc.size(0, 0), cc.TEXT_ALIGNMENT_LEFT);
+        scoreLabel.setColor("");
         scoreLabel.setPosition(cc.p(winSize.width - 80, winSize.height));
         scoreLabel.schedule(function () {
             var showingScore = parseInt(scoreLabel.getString());
